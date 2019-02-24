@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+form {
+	border: 1px solid #F00;
+	width: 300px;
+	padding: 5px;
+}
+</style>
+</head>
+
+<body>
+<form action="#" method="get" id="form1" name="form1">
+  <p>姓名：<input type="text"/></p>
+  <p>
+    <lable>性别：<input type="radio" name="RadioGroup1" value="男"/>男</label>
+    <lable><input type="radio" name="RadioGroup1" value="女"/>女</lable>
+    <lable><input type="radio" name="RadioGroup1" value="保密"/>保密</label>
+  </p>
+  <p><input type="submit" value="提交"/></p>
+</form>
+<form action="#" method="get" id="form2" name="form2">
+  <p>姓名：<input type="text"/></p>
+  <p><lable>喜欢的运动：<input type="checkbox" value="足球"/>足球</lable>
+    <lable><input type="checkbox" value="蓝球"/>蓝球</lable>
+    <lable><input type="checkbox" value="排球"/>排球</lable>
+  </p>
+  <p>
+    <input type="submit" value="提交"/>
+  </p>
+</form>
+<form action="#" method="get" id="form3" name="form3">
+  <p>姓名：<input type="text"/></p>
+  <p>所在城市：
+    <select>
+      <optgroup label="云南省">
+      <option>昆明</option>
+      <option selected="selected">普洱</option>
+      <option>玉溪</option>
+      </optgroup>
+      <optgroup label="浙江省">
+      <option>金华</option>
+      <option>义乌</option>
+      <optgroup>
+    </select>
+  </p>
+  <p><input type="submit"/></p>
+</form>
+<form action="#" method="get" id="form4" name="form4">
+  <p>请输入数值：<input type="number" name="number1" min="1" max="20" step="4"/></p>
+  <p><input type="submit" value="提交"/></p>
+</form>
+<form action="#" method="get" id="form5" name="form5">
+  <p>输入您喜欢的城市名</p>
+  <p><input type="text" list="cityList"/></p>
+  <p>
+    <datalist id="cityList">
+      <option>北京</option>
+      <option>上海</option>
+      <option>昆明</option>
+    </datalist>
+  </p>
+  <p><input type="submit" value="提交"/></p>
+</form>
+<form action="#" method="get" id="form5" name="form5">
+  <p>请仔细阅读许可协议</p>
+  <!--这里的cols="30" rows="5"是文本框的长和高的意思-->
+  <textarea id="textarea1" name="textarea1" cols="30" rows="5">
+    许可协议具体内容......
+    </textarea>
+  <p>
+    <input type="submit" value="同意"/>
+    <input type="submit" value="拒绝"/>
+  </p>
+</form>
+<form action="#" method="get" id="form6" name="form6">
+  <p>请输入用户名：<input type="text"/></p>
+  <p><input type="image" src="images/submit.png" width="60" height="22"/></p>
+</form>
+<form action="#" method="get" id="form7" name="form7">
+  <p>请输入网址：<input type="url" list="url_list"/></p>
+  <datalist id="url_list">
+    <option label="新浪" value="http://www.sina.com.cn"/>
+    <option label="百度" value="http://www.baidu.com"/>
+    <option label="网易" value="http://www.163.com"/>
+  </datalist>
+  <input type="submit" value="提交"/>
+</form>
+</body>
+</html>
